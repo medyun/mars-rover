@@ -1,0 +1,21 @@
+{
+  "require": {
+    "vlucas/phpdotenv": "^2.4",
+    "guzzlehttp/psr7": "^1.4",
+    "predis/predis": "^1.1.7",
+    "zircote/swagger-php": "^3.2",
+    "doctrine/annotations": "^1.13"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "phpunit/phpunit": "^7"
+  },
+  "autoload": {
+    "classmap": ["src"],
+    "psr-4": {
+      "Src\\": "src/",
+      "Test\\": "test/"
+    }
+  }
+}

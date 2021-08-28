@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href=".css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/style.css" rel="stylesheet" type="text/css">
+  <link href=".css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/var/www/html/src</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/CommandController.php.html#13">MarsRover\Controller\CommandController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/PlateauController.php.html#9">MarsRover\Controller\PlateauController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/RoverController.php.html#12">MarsRover\Controller\RoverController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Coordinate.php.html#5">MarsRover\Model\Coordinate</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Direction/Direction.php.html#5">MarsRover\Model\Direction</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Plateau.php.html#7">MarsRover\Model\Plateau\Plateau</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Rover/Rover.php.html#7">MarsRover\Model\Rover</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Rover/RoverSetup.php.html#7">MarsRover\Model\RoverSetup</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PlateauRepository.php.html#5">MarsRover\Repository\PlateauRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RoverRepository.php.html#5">MarsRover\Repository\RoverRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Command/CommandFactory.php.html#7">MarsRover\Service\CommandFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Command/CommandsInit.php.html#5">MarsRover\Service\CommandsInit</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Command/Move.php.html#9">MarsRover\Service\Move</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Command/TurnLeft.php.html#10">MarsRover\Service\TurnLeft</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Command/TurnRight.php.html#9">MarsRover\Service\TurnRight</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/RoverController.php.html#12">MarsRover\Controller\RoverController</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Controller/PlateauController.php.html#9">MarsRover\Controller\PlateauController</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Service/Command/Move.php.html#9">MarsRover\Service\Move</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Model/Rover/Rover.php.html#7">MarsRover\Model\Rover</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Controller/CommandController.php.html#13">MarsRover\Controller\CommandController</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Service/Command/TurnLeft.php.html#10">MarsRover\Service\TurnLeft</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Service/Command/TurnRight.php.html#9">MarsRover\Service\TurnRight</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Model/Direction/Direction.php.html#5">MarsRover\Model\Direction</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Service/Command/CommandFactory.php.html#7">MarsRover\Service\CommandFactory</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Service/Command/CommandsInit.php.html#5">MarsRover\Service\CommandsInit</a></td><td class="text-right">12</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/CommandController.php.html#18"><abbr title="MarsRover\Controller\CommandController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PlateauRepository.php.html#25"><abbr title="MarsRover\Repository\PlateauRepository::getNewPlateauID">getNewPlateauID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Rover/Rover.php.html#59"><abbr title="MarsRover\Model\Rover::getSetupAsString">getSetupAsString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Rover/RoverSetup.php.html#13"><abbr title="MarsRover\Model\RoverSetup::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Rover/RoverSetup.php.html#20"><abbr title="MarsRover\Model\RoverSetup::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Rover/RoverSetup.php.html#31"><abbr title="MarsRover\Model\RoverSetup::getCoordinate">getCoordinate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Rover/RoverSetup.php.html#36"><abbr title="MarsRover\Model\RoverSetup::getDirection">getDirection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Rover/RoverSetup.php.html#41"><abbr title="MarsRover\Model\RoverSetup::getPlateau">getPlateau</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PlateauRepository.php.html#10"><abbr title="MarsRover\Repository\PlateauRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PlateauRepository.php.html#15"><abbr title="MarsRover\Repository\PlateauRepository::getAllPlateaus">getAllPlateaus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PlateauRepository.php.html#20"><abbr title="MarsRover\Repository\PlateauRepository::getSinglePlateaus">getSinglePlateaus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PlateauRepository.php.html#30"><abbr title="MarsRover\Repository\PlateauRepository::createNewPlateau">createNewPlateau</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Rover/Rover.php.html#34"><abbr title="MarsRover\Model\Rover::setSetup">setSetup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RoverRepository.php.html#10"><abbr title="MarsRover\Repository\RoverRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RoverRepository.php.html#15"><abbr title="MarsRover\Repository\RoverRepository::getAllRovers">getAllRovers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RoverRepository.php.html#20"><abbr title="MarsRover\Repository\RoverRepository::getSingleRover">getSingleRover</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RoverRepository.php.html#25"><abbr title="MarsRover\Repository\RoverRepository::createNewRower">createNewRower</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RoverRepository.php.html#32"><abbr title="MarsRover\Repository\RoverRepository::setRowerCoordinates">setRowerCoordinates</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Command/CommandFactory.php.html#9"><abbr title="MarsRover\Service\CommandFactory::createCommand">createCommand</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Command/CommandsInit.php.html#15"><abbr title="MarsRover\Service\CommandsInit::getCommandsCollection">getCommandsCollection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Command/CommandsInit.php.html#20"><abbr title="MarsRover\Service\CommandsInit::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Command/Move.php.html#11"><abbr title="MarsRover\Service\Move::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Command/TurnLeft.php.html#12"><abbr title="MarsRover\Service\TurnLeft::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Rover/Rover.php.html#39"><abbr title="MarsRover\Model\Rover::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Rover/Rover.php.html#29"><abbr title="MarsRover\Model\Rover::getCommands">getCommands</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CommandController.php.html#32"><abbr title="MarsRover\Controller\CommandController::setCommandsAction">setCommandsAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Coordinate.php.html#21"><abbr title="MarsRover\Model\Coordinate::getY">getY</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/PlateauController.php.html#14"><abbr title="MarsRover\Controller\PlateauController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/PlateauController.php.html#23"><abbr title="MarsRover\Controller\PlateauController::createAction">createAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/PlateauController.php.html#51"><abbr title="MarsRover\Controller\PlateauController::getPlateauAction">getPlateauAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/RoverController.php.html#17"><abbr title="MarsRover\Controller\RoverController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/RoverController.php.html#26"><abbr title="MarsRover\Controller\RoverController::createRoverAction">createRoverAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/RoverController.php.html#75"><abbr title="MarsRover\Controller\RoverController::getRoverAction">getRoverAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/RoverController.php.html#79"><abbr title="MarsRover\Controller\RoverController::getRoverStateAction">getRoverStateAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/RoverController.php.html#86"><abbr title="MarsRover\Controller\RoverController::getRoverDataAction">getRoverDataAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Coordinate.php.html#10"><abbr title="MarsRover\Model\Coordinate::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Coordinate.php.html#16"><abbr title="MarsRover\Model\Coordinate::getX">getX</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Coordinate.php.html#26"><abbr title="MarsRover\Model\Coordinate::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Rover/Rover.php.html#24"><abbr title="MarsRover\Model\Rover::setCommands">setCommands</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Direction/Direction.php.html#14"><abbr title="MarsRover\Model\Direction::getHeading">getHeading</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Direction/Direction.php.html#19"><abbr title="MarsRover\Model\Direction::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Direction/Direction.php.html#30"><abbr title="MarsRover\Model\Direction::isValid">isValid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Plateau.php.html#13"><abbr title="MarsRover\Model\Plateau\Plateau::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Plateau.php.html#20"><abbr title="MarsRover\Model\Plateau\Plateau::getMinBorders">getMinBorders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Plateau.php.html#25"><abbr title="MarsRover\Model\Plateau\Plateau::getMaxBorders">getMaxBorders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Plateau.php.html#30"><abbr title="MarsRover\Model\Plateau\Plateau::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Plateau.php.html#35"><abbr title="MarsRover\Model\Plateau\Plateau::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Plateau.php.html#40"><abbr title="MarsRover\Model\Plateau\Plateau::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Rover/Rover.php.html#19"><abbr title="MarsRover\Model\Rover::getSetup">getSetup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Command/TurnRight.php.html#11"><abbr title="MarsRover\Service\TurnRight::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Service/Command/Move.php.html#11"><abbr title="MarsRover\Service\Move::execute">execute</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Controller/RoverController.php.html#26"><abbr title="MarsRover\Controller\RoverController::createRoverAction">createRoverAction</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Controller/PlateauController.php.html#51"><abbr title="MarsRover\Controller\PlateauController::getPlateauAction">getPlateauAction</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Controller/CommandController.php.html#32"><abbr title="MarsRover\Controller\CommandController::setCommandsAction">setCommandsAction</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Controller/RoverController.php.html#86"><abbr title="MarsRover\Controller\RoverController::getRoverDataAction">getRoverDataAction</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Service/Command/CommandFactory.php.html#9"><abbr title="MarsRover\Service\CommandFactory::createCommand">createCommand</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Model/Rover/Rover.php.html#39"><abbr title="MarsRover\Model\Rover::execute">execute</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/PlateauController.php.html#23"><abbr title="MarsRover\Controller\PlateauController::createAction">createAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/Direction/Direction.php.html#19"><abbr title="MarsRover\Model\Direction::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Service/Command/CommandsInit.php.html#20"><abbr title="MarsRover\Service\CommandsInit::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.1.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.2.31</a> with <a href="https://xdebug.org/">Xdebug 2.9.6</a> and <a href="https://phpunit.de/">PHPUnit 7.5.20</a> at Sat Aug 28 15:16:11 UTC 2021.</small>
+    </p>
+   </footer>
+  </div>
+  <script src=".js/jquery.min.js" type="text/javascript"></script>
+  <script src=".js/d3.min.js" type="text/javascript"></script>
+  <script src=".js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([15,0,0,0,0,0,0,0,0,0,0,4], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([50,0,0,0,0,0,0,0,0,0,0,3], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,6,"<a href=\"Controller\/CommandController.php.html#13\">MarsRover\\Controller\\CommandController<\/a>"],[0,9,"<a href=\"Controller\/PlateauController.php.html#9\">MarsRover\\Controller\\PlateauController<\/a>"],[0,14,"<a href=\"Controller\/RoverController.php.html#12\">MarsRover\\Controller\\RoverController<\/a>"],[100,0,"<a href=\"Model\/Command\/CommandTypes.php.html#5\">MarsRover\\Model\\CommandTypes<\/a>"],[0,4,"<a href=\"Model\/Coordinate.php.html#5\">MarsRover\\Model\\Coordinate<\/a>"],[0,4,"<a href=\"Model\/Direction\/Direction.php.html#5\">MarsRover\\Model\\Direction<\/a>"],[100,0,"<a href=\"Model\/Direction\/DirectionCommandTypes.php.html#5\">MarsRover\\Model\\Direction\\DirectionCommandTypes<\/a>"],[0,6,"<a href=\"Model\/Plateau.php.html#7\">MarsRover\\Model\\Plateau\\Plateau<\/a>"],[0,8,"<a href=\"Model\/Rover\/Rover.php.html#7\">MarsRover\\Model\\Rover<\/a>"],[0,5,"<a href=\"Model\/Rover\/RoverSetup.php.html#7\">MarsRover\\Model\\RoverSetup<\/a>"],[0,5,"<a href=\"Repository\/PlateauRepository.php.html#5\">MarsRover\\Repository\\PlateauRepository<\/a>"],[0,5,"<a href=\"Repository\/RoverRepository.php.html#5\">MarsRover\\Repository\\RoverRepository<\/a>"],[0,4,"<a href=\"Service\/Command\/CommandFactory.php.html#7\">MarsRover\\Service\\CommandFactory<\/a>"],[100,0,"<a href=\"Service\/Command\/CommandsCollection.php.html#5\">MarsRover\\Service\\CommandsCollection<\/a>"],[0,3,"<a href=\"Service\/Command\/CommandsInit.php.html#5\">MarsRover\\Service\\CommandsInit<\/a>"],[0,9,"<a href=\"Service\/Command\/Move.php.html#9\">MarsRover\\Service\\Move<\/a>"],[100,1,"<a href=\"Service\/Command\/Rotatable.php.html#5\">MarsRover\\Service\\Rotatable<\/a>"],[0,6,"<a href=\"Service\/Command\/TurnLeft.php.html#10\">MarsRover\\Service\\TurnLeft<\/a>"],[0,6,"<a href=\"Service\/Command\/TurnRight.php.html#9\">MarsRover\\Service\\TurnRight<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Controller\/CommandController.php.html#18\">MarsRover\\Controller\\CommandController::__construct<\/a>"],[0,5,"<a href=\"Controller\/CommandController.php.html#32\">MarsRover\\Controller\\CommandController::setCommandsAction<\/a>"],[0,1,"<a href=\"Controller\/PlateauController.php.html#14\">MarsRover\\Controller\\PlateauController::__construct<\/a>"],[0,2,"<a href=\"Controller\/PlateauController.php.html#23\">MarsRover\\Controller\\PlateauController::createAction<\/a>"],[0,6,"<a href=\"Controller\/PlateauController.php.html#51\">MarsRover\\Controller\\PlateauController::getPlateauAction<\/a>"],[0,1,"<a href=\"Controller\/RoverController.php.html#17\">MarsRover\\Controller\\RoverController::__construct<\/a>"],[0,7,"<a href=\"Controller\/RoverController.php.html#26\">MarsRover\\Controller\\RoverController::createRoverAction<\/a>"],[0,1,"<a href=\"Controller\/RoverController.php.html#75\">MarsRover\\Controller\\RoverController::getRoverAction<\/a>"],[0,1,"<a href=\"Controller\/RoverController.php.html#79\">MarsRover\\Controller\\RoverController::getRoverStateAction<\/a>"],[0,4,"<a href=\"Controller\/RoverController.php.html#86\">MarsRover\\Controller\\RoverController::getRoverDataAction<\/a>"],[0,1,"<a href=\"Model\/Coordinate.php.html#10\">MarsRover\\Model\\Coordinate::__construct<\/a>"],[0,1,"<a href=\"Model\/Coordinate.php.html#16\">MarsRover\\Model\\Coordinate::getX<\/a>"],[0,1,"<a href=\"Model\/Coordinate.php.html#21\">MarsRover\\Model\\Coordinate::getY<\/a>"],[0,1,"<a href=\"Model\/Coordinate.php.html#26\">MarsRover\\Model\\Coordinate::toArray<\/a>"],[0,1,"<a href=\"Model\/Direction\/Direction.php.html#14\">MarsRover\\Model\\Direction::getHeading<\/a>"],[0,2,"<a href=\"Model\/Direction\/Direction.php.html#19\">MarsRover\\Model\\Direction::__construct<\/a>"],[0,1,"<a href=\"Model\/Direction\/Direction.php.html#30\">MarsRover\\Model\\Direction::isValid<\/a>"],[0,1,"<a href=\"Model\/Plateau.php.html#13\">MarsRover\\Model\\Plateau\\Plateau::__construct<\/a>"],[0,1,"<a href=\"Model\/Plateau.php.html#20\">MarsRover\\Model\\Plateau\\Plateau::getMinBorders<\/a>"],[0,1,"<a href=\"Model\/Plateau.php.html#25\">MarsRover\\Model\\Plateau\\Plateau::getMaxBorders<\/a>"],[0,1,"<a href=\"Model\/Plateau.php.html#30\">MarsRover\\Model\\Plateau\\Plateau::getId<\/a>"],[0,1,"<a href=\"Model\/Plateau.php.html#35\">MarsRover\\Model\\Plateau\\Plateau::__toString<\/a>"],[0,1,"<a href=\"Model\/Plateau.php.html#40\">MarsRover\\Model\\Plateau\\Plateau::toArray<\/a>"],[0,1,"<a href=\"Model\/Rover\/Rover.php.html#19\">MarsRover\\Model\\Rover::getSetup<\/a>"],[0,1,"<a href=\"Model\/Rover\/Rover.php.html#24\">MarsRover\\Model\\Rover::setCommands<\/a>"],[0,1,"<a href=\"Model\/Rover\/Rover.php.html#29\">MarsRover\\Model\\Rover::getCommands<\/a>"],[0,1,"<a href=\"Model\/Rover\/Rover.php.html#34\">MarsRover\\Model\\Rover::setSetup<\/a>"],[0,3,"<a href=\"Model\/Rover\/Rover.php.html#39\">MarsRover\\Model\\Rover::execute<\/a>"],[0,1,"<a href=\"Model\/Rover\/Rover.php.html#59\">MarsRover\\Model\\Rover::getSetupAsString<\/a>"],[0,1,"<a href=\"Model\/Rover\/RoverSetup.php.html#13\">MarsRover\\Model\\RoverSetup::__construct<\/a>"],[0,1,"<a href=\"Model\/Rover\/RoverSetup.php.html#20\">MarsRover\\Model\\RoverSetup::__toString<\/a>"],[0,1,"<a href=\"Model\/Rover\/RoverSetup.php.html#31\">MarsRover\\Model\\RoverSetup::getCoordinate<\/a>"],[0,1,"<a href=\"Model\/Rover\/RoverSetup.php.html#36\">MarsRover\\Model\\RoverSetup::getDirection<\/a>"],[0,1,"<a href=\"Model\/Rover\/RoverSetup.php.html#41\">MarsRover\\Model\\RoverSetup::getPlateau<\/a>"],[0,1,"<a href=\"Repository\/PlateauRepository.php.html#10\">MarsRover\\Repository\\PlateauRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/PlateauRepository.php.html#15\">MarsRover\\Repository\\PlateauRepository::getAllPlateaus<\/a>"],[0,1,"<a href=\"Repository\/PlateauRepository.php.html#20\">MarsRover\\Repository\\PlateauRepository::getSinglePlateaus<\/a>"],[0,1,"<a href=\"Repository\/PlateauRepository.php.html#25\">MarsRover\\Repository\\PlateauRepository::getNewPlateauID<\/a>"],[0,1,"<a href=\"Repository\/PlateauRepository.php.html#30\">MarsRover\\Repository\\PlateauRepository::createNewPlateau<\/a>"],[0,1,"<a href=\"Repository\/RoverRepository.php.html#10\">MarsRover\\Repository\\RoverRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/RoverRepository.php.html#15\">MarsRover\\Repository\\RoverRepository::getAllRovers<\/a>"],[0,1,"<a href=\"Repository\/RoverRepository.php.html#20\">MarsRover\\Repository\\RoverRepository::getSingleRover<\/a>"],[0,1,"<a href=\"Repository\/RoverRepository.php.html#25\">MarsRover\\Repository\\RoverRepository::createNewRower<\/a>"],[0,1,"<a href=\"Repository\/RoverRepository.php.html#32\">MarsRover\\Repository\\RoverRepository::setRowerCoordinates<\/a>"],[0,4,"<a href=\"Service\/Command\/CommandFactory.php.html#9\">MarsRover\\Service\\CommandFactory::createCommand<\/a>"],[0,1,"<a href=\"Service\/Command\/CommandsInit.php.html#15\">MarsRover\\Service\\CommandsInit::getCommandsCollection<\/a>"],[0,2,"<a href=\"Service\/Command\/CommandsInit.php.html#20\">MarsRover\\Service\\CommandsInit::__construct<\/a>"],[0,9,"<a href=\"Service\/Command\/Move.php.html#11\">MarsRover\\Service\\Move::execute<\/a>"],[100,1,"<a href=\"Service\/Command\/Rotatable.php.html#7\">MarsRover\\Service\\Rotatable::rotateFrom<\/a>"],[0,1,"<a href=\"Service\/Command\/TurnLeft.php.html#12\">MarsRover\\Service\\TurnLeft::execute<\/a>"],[100,5,"<a href=\"Service\/Command\/TurnLeft.php.html#30\">MarsRover\\Service\\TurnLeft::rotateFrom<\/a>"],[0,1,"<a href=\"Service\/Command\/TurnRight.php.html#11\">MarsRover\\Service\\TurnRight::execute<\/a>"],[100,5,"<a href=\"Service\/Command\/TurnRight.php.html#29\">MarsRover\\Service\\TurnRight::rotateFrom<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
